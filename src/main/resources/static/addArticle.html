@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Добавление статьии</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/assets/css/suneditor.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/assets/css/suneditor-contents.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="contanier">
+    <h1 class="text-center my-5">Добавить статью</h1>
+    <div class="col-sm-5 mx-auto">
+        <form onsubmit="sendForm(this);return false">
+            <div class="mb-3">
+                <input name="title" placeholder="Заголовок" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <textarea id="sample" ></textarea>
+            </div>
+
+            <div class="mb-3">
+                <input name="author" placeholder="Автор" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="submit" class="form-control btn btn-primary" value="Добавить статью">
+            </div>
+
+
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ru.js"></script>
+<script src="/js/editor.js"></script>
+
+</body>
+</html>
